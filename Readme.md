@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[CustomWebDocumentViewerOperationLogger.cs](./CS/DevExpressWebGardenReporting/CustomWebDocumentViewerOperationLogger.cs) (VB: [CustomWebDocumentViewerOperationLogger.vb](./VB/DevExpressWebGardenReporting/CustomWebDocumentViewerOperationLogger.vb))**
+* [Global.asax.cs](./CS/DevExpressWebGardenReporting/Global.asax.cs) (VB: [Global.asax.vb](./VB/DevExpressWebGardenReporting/Global.asax.vb))
+* [ReportStorageWebExtension1.cs](./CS/DevExpressWebGardenReporting/ReportStorageWebExtension1.cs) (VB: [ReportStorageWebExtension1.vb](./VB/DevExpressWebGardenReporting/ReportStorageWebExtension1.vb))
+<!-- default file list end -->
 # How to use the Web Report Designer and Web Document Viewer in the Web Gardens environment
 
 
