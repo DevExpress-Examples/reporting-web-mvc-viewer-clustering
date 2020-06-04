@@ -13,6 +13,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             DefaultWebDocumentViewerContainer.UseFileExportedDocumentStorage(Server.MapPath("~/CustomSharedViewerStorage/ExportedDocuments"), StorageSynchronizationMode.InterProcess);
             DefaultWebDocumentViewerContainer.UseFileDocumentStorage(Server.MapPath("~/CustomSharedViewerStorage/Documents"), StorageSynchronizationMode.InterProcess);
             DefaultWebDocumentViewerContainer.UseFileReportStorage(Server.MapPath("~/CustomSharedViewerStorage/Reports"), StorageSynchronizationMode.InterProcess);
+            DefaultWebDocumentViewerContainer.UseCachedReportSourceBuilder();
             DefaultWebDocumentViewerContainer.Register<ICachedReportSourceWebResolver, CustomCachedReportSourceWebResolver>();
             DevExpress.XtraReports.Web.Extensions.ReportStorageWebExtension.RegisterExtensionGlobal(new ReportStorageWebExtension1(Server.MapPath("~/CustomSharedDesignerStorage")));
             var storageCleanerSettings = new StorageCleanerSettings(TimeSpan.FromMinutes(1), TimeSpan.FromMinutes(2), TimeSpan.FromMinutes(20), TimeSpan.FromMinutes(20), TimeSpan.FromMinutes(20));
