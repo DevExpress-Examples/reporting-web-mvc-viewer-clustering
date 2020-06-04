@@ -1,4 +1,4 @@
-# hopw to Use Reporting Controls in a Clustered Web Environment (Web Farms or Web Garden).
+# How to Use Reporting Controls in a Clustered Web Environment (Web Farms or Web Garden).
 
 
 This example demonstrates how to use the <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument17103">End-User Report Designer</a> and <a href="https://documentation.devexpress.com/#XtraReports/CustomDocument17738">Web Document Viewer</a> in a clustered environment.
