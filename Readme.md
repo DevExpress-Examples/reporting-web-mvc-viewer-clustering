@@ -5,11 +5,20 @@ This example demonstrates how to use the <a href="https://documentation.devexpre
 
 
 
-Call the following methods >DefaultWebDocumentViewerContainer</strong>&nbsp;on the application start to use a file storage for reports, documents and exported documents:
+Call the following methods on the application start to use a file storage for reports, documents and exported documents:
 * [DefaultWebDocumentViewerContainer.UseFileReportStorage](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.WebDocumentViewer.DefaultWebDocumentViewerContainer.UseFileReportStorage.overloads)
 * [DefaultWebDocumentViewerContainer.UseFileDocumentStorage](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.WebDocumentViewer.DefaultWebDocumentViewerContainer.UseFileDocumentStorage.overloads)
+* [DefaultWebDocumentViewerContainer.UseFileExportedDocumentStorage](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.WebDocumentViewer.DefaultWebDocumentViewerContainer.UseFileExportedDocumentStorage.overloads)
 
 The first method parameter is the path to the shared folder. The second method parameter is the [StorageSynchronizationMode.InterProcess](xref:https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.WebDocumentViewer.StorageSynchronizationMode) enumeration value.
+
+> The application uses the following folders to store reports, documents and exported documents: 
+>
+> * CustomSharedViewerStorage
+> * CustomSharedDesignerStorage
+> 
+> These folders should be shared between application instances in a clustered environment and accessible to all web farm's nodes.
+ 
 
 Refer to the following help topics for more information:
 
