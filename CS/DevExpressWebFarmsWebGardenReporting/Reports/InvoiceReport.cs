@@ -26,6 +26,9 @@ namespace DevExpressWebFarmsWebGardenReporting {
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InvoiceReport));
+            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
@@ -44,16 +47,16 @@ namespace DevExpressWebFarmsWebGardenReporting {
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column8 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression8 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column9 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression9 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
             DevExpress.DataAccess.Sql.Column column10 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression10 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column11 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression11 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column12 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression12 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
             DevExpress.DataAccess.Sql.Column column13 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression13 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column14 = new DevExpress.DataAccess.Sql.Column();
@@ -62,8 +65,10 @@ namespace DevExpressWebFarmsWebGardenReporting {
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression15 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column16 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression16 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column17 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression17 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
             DevExpress.DataAccess.Sql.Column column18 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression18 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column19 = new DevExpress.DataAccess.Sql.Column();
@@ -76,7 +81,6 @@ namespace DevExpressWebFarmsWebGardenReporting {
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression22 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column23 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression23 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
             DevExpress.DataAccess.Sql.Column column24 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression24 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column25 = new DevExpress.DataAccess.Sql.Column();
@@ -91,32 +95,37 @@ namespace DevExpressWebFarmsWebGardenReporting {
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression29 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column30 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression30 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery4 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.AllColumns allColumns1 = new DevExpress.DataAccess.Sql.AllColumns();
+            DevExpress.DataAccess.Sql.Table table4 = new DevExpress.DataAccess.Sql.Table();
             DevExpress.DataAccess.Sql.Column column31 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression31 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column32 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression32 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column33 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression33 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Join join1 = new DevExpress.DataAccess.Sql.Join();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column34 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression34 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table4 = new DevExpress.DataAccess.Sql.Table();
             DevExpress.DataAccess.Sql.Column column35 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression35 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column36 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression36 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column37 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression37 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column38 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression38 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column39 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression39 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column40 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression40 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column41 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression41 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.MasterDetailInfo masterDetailInfo1 = new DevExpress.DataAccess.Sql.MasterDetailInfo();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.MasterDetailInfo masterDetailInfo2 = new DevExpress.DataAccess.Sql.MasterDetailInfo();
             DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo2 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InvoiceReport));
-            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraPrinting.BarCode.Code128Generator code128Generator1 = new DevExpress.XtraPrinting.BarCode.Code128Generator();
             DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings1 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
-            this.Name = "Invoice";
-            this.DisplayName = "Invoice";
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
@@ -157,6 +166,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
+            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.barCode1 = new DevExpress.XtraReports.UI.XRBarCode();
             this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
@@ -173,185 +183,6 @@ namespace DevExpressWebFarmsWebGardenReporting {
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
-            // 
-            // sqlDataSource1
-            // 
-            this.sqlDataSource1.ConnectionName = "NWindConnectionString";
-            this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression1.ColumnName = "OrderID";
-            table1.Name = "OrderDetailsExtended";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "ProductID";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "ProductName";
-            columnExpression3.Table = table1;
-            column3.Expression = columnExpression3;
-            columnExpression4.ColumnName = "UnitPrice";
-            columnExpression4.Table = table1;
-            column4.Expression = columnExpression4;
-            columnExpression5.ColumnName = "Quantity";
-            columnExpression5.Table = table1;
-            column5.Expression = columnExpression5;
-            columnExpression6.ColumnName = "Discount";
-            columnExpression6.Table = table1;
-            column6.Expression = columnExpression6;
-            columnExpression7.ColumnName = "ExtendedPrice";
-            columnExpression7.Table = table1;
-            column7.Expression = columnExpression7;
-            columnExpression8.ColumnName = "Supplier";
-            columnExpression8.Table = table1;
-            column8.Expression = columnExpression8;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.Columns.Add(column4);
-            selectQuery1.Columns.Add(column5);
-            selectQuery1.Columns.Add(column6);
-            selectQuery1.Columns.Add(column7);
-            selectQuery1.Columns.Add(column8);
-            selectQuery1.Name = "OrderDetails";
-            selectQuery1.Tables.Add(table1);
-            columnExpression9.ColumnName = "OrderID";
-            table2.Name = "Orders";
-            columnExpression9.Table = table2;
-            column9.Expression = columnExpression9;
-            columnExpression10.ColumnName = "CustomerID";
-            columnExpression10.Table = table2;
-            column10.Expression = columnExpression10;
-            columnExpression11.ColumnName = "EmployeeID";
-            columnExpression11.Table = table2;
-            column11.Expression = columnExpression11;
-            columnExpression12.ColumnName = "OrderDate";
-            columnExpression12.Table = table2;
-            column12.Expression = columnExpression12;
-            columnExpression13.ColumnName = "RequiredDate";
-            columnExpression13.Table = table2;
-            column13.Expression = columnExpression13;
-            columnExpression14.ColumnName = "ShippedDate";
-            columnExpression14.Table = table2;
-            column14.Expression = columnExpression14;
-            columnExpression15.ColumnName = "ShipVia";
-            columnExpression15.Table = table2;
-            column15.Expression = columnExpression15;
-            columnExpression16.ColumnName = "Freight";
-            columnExpression16.Table = table2;
-            column16.Expression = columnExpression16;
-            columnExpression17.ColumnName = "ShipName";
-            columnExpression17.Table = table2;
-            column17.Expression = columnExpression17;
-            columnExpression18.ColumnName = "ShipAddress";
-            columnExpression18.Table = table2;
-            column18.Expression = columnExpression18;
-            columnExpression19.ColumnName = "ShipCity";
-            columnExpression19.Table = table2;
-            column19.Expression = columnExpression19;
-            columnExpression20.ColumnName = "ShipRegion";
-            columnExpression20.Table = table2;
-            column20.Expression = columnExpression20;
-            columnExpression21.ColumnName = "ShipPostalCode";
-            columnExpression21.Table = table2;
-            column21.Expression = columnExpression21;
-            columnExpression22.ColumnName = "ShipCountry";
-            columnExpression22.Table = table2;
-            column22.Expression = columnExpression22;
-            column23.Alias = "Customers_CustomerID";
-            columnExpression23.ColumnName = "CustomerID";
-            table3.Name = "Customers";
-            columnExpression23.Table = table3;
-            column23.Expression = columnExpression23;
-            columnExpression24.ColumnName = "CompanyName";
-            columnExpression24.Table = table3;
-            column24.Expression = columnExpression24;
-            columnExpression25.ColumnName = "ContactName";
-            columnExpression25.Table = table3;
-            column25.Expression = columnExpression25;
-            columnExpression26.ColumnName = "ContactTitle";
-            columnExpression26.Table = table3;
-            column26.Expression = columnExpression26;
-            columnExpression27.ColumnName = "Address";
-            columnExpression27.Table = table3;
-            column27.Expression = columnExpression27;
-            columnExpression28.ColumnName = "City";
-            columnExpression28.Table = table3;
-            column28.Expression = columnExpression28;
-            columnExpression29.ColumnName = "Region";
-            columnExpression29.Table = table3;
-            column29.Expression = columnExpression29;
-            columnExpression30.ColumnName = "PostalCode";
-            columnExpression30.Table = table3;
-            column30.Expression = columnExpression30;
-            columnExpression31.ColumnName = "Country";
-            columnExpression31.Table = table3;
-            column31.Expression = columnExpression31;
-            columnExpression32.ColumnName = "Phone";
-            columnExpression32.Table = table3;
-            column32.Expression = columnExpression32;
-            columnExpression33.ColumnName = "Fax";
-            columnExpression33.Table = table3;
-            column33.Expression = columnExpression33;
-            selectQuery2.Columns.Add(column9);
-            selectQuery2.Columns.Add(column10);
-            selectQuery2.Columns.Add(column11);
-            selectQuery2.Columns.Add(column12);
-            selectQuery2.Columns.Add(column13);
-            selectQuery2.Columns.Add(column14);
-            selectQuery2.Columns.Add(column15);
-            selectQuery2.Columns.Add(column16);
-            selectQuery2.Columns.Add(column17);
-            selectQuery2.Columns.Add(column18);
-            selectQuery2.Columns.Add(column19);
-            selectQuery2.Columns.Add(column20);
-            selectQuery2.Columns.Add(column21);
-            selectQuery2.Columns.Add(column22);
-            selectQuery2.Columns.Add(column23);
-            selectQuery2.Columns.Add(column24);
-            selectQuery2.Columns.Add(column25);
-            selectQuery2.Columns.Add(column26);
-            selectQuery2.Columns.Add(column27);
-            selectQuery2.Columns.Add(column28);
-            selectQuery2.Columns.Add(column29);
-            selectQuery2.Columns.Add(column30);
-            selectQuery2.Columns.Add(column31);
-            selectQuery2.Columns.Add(column32);
-            selectQuery2.Columns.Add(column33);
-            selectQuery2.Name = "Orders";
-            relationColumnInfo1.NestedKeyColumn = "CustomerID";
-            relationColumnInfo1.ParentKeyColumn = "CustomerID";
-            join1.KeyColumns.Add(relationColumnInfo1);
-            join1.Nested = table2;
-            join1.Parent = table3;
-            selectQuery2.Relations.Add(join1);
-            selectQuery2.Tables.Add(table3);
-            selectQuery2.Tables.Add(table2);
-            columnExpression34.ColumnName = "CustomerID";
-            table4.Name = "Customers";
-            columnExpression34.Table = table4;
-            column34.Expression = columnExpression34;
-            columnExpression35.ColumnName = "CompanyName";
-            columnExpression35.Table = table4;
-            column35.Expression = columnExpression35;
-            columnExpression36.ColumnName = "ContactName";
-            columnExpression36.Table = table4;
-            column36.Expression = columnExpression36;
-            selectQuery3.Columns.Add(column34);
-            selectQuery3.Columns.Add(column35);
-            selectQuery3.Columns.Add(column36);
-            selectQuery3.Name = "Customers";
-            selectQuery3.Tables.Add(table4);
-            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1,
-            selectQuery2,
-            selectQuery3});
-            masterDetailInfo1.DetailQueryName = "OrderDetails";
-            relationColumnInfo2.NestedKeyColumn = "OrderID";
-            relationColumnInfo2.ParentKeyColumn = "OrderID";
-            masterDetailInfo1.KeyColumns.Add(relationColumnInfo2);
-            masterDetailInfo1.MasterQueryName = "Orders";
-            this.sqlDataSource1.Relations.AddRange(new DevExpress.DataAccess.Sql.MasterDetailInfo[] {
-            masterDetailInfo1});
-            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // Detail
             // 
@@ -396,8 +227,8 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrLabel5
             // 
-            this.xrLabel5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.ShipCountry")});
+            this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ShipCountry]")});
             this.xrLabel5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 102F);
             this.xrLabel5.Name = "xrLabel5";
@@ -408,8 +239,8 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrLabel4
             // 
-            this.xrLabel4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.ShipCity")});
+            this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ShipCity]")});
             this.xrLabel4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 79.00003F);
             this.xrLabel4.Name = "xrLabel4";
@@ -420,8 +251,8 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrLabel3
             // 
-            this.xrLabel3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.ShipAddress")});
+            this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ShipAddress]")});
             this.xrLabel3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 56.00001F);
             this.xrLabel3.Name = "xrLabel3";
@@ -432,8 +263,8 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrLabel2
             // 
-            this.xrLabel2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.ContactName")});
+            this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ContactName]")});
             this.xrLabel2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 32.99999F);
             this.xrLabel2.Name = "xrLabel2";
@@ -444,8 +275,8 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrLabel1
             // 
-            this.xrLabel1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.CompanyName")});
+            this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CompanyName]")});
             this.xrLabel1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 10.00001F);
             this.xrLabel1.Name = "xrLabel1";
@@ -459,7 +290,6 @@ namespace DevExpressWebFarmsWebGardenReporting {
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel20,
             this.xrLabel19});
-            this.TopMargin.HeightF = 100F;
             this.TopMargin.Name = "TopMargin";
             this.TopMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
@@ -499,14 +329,13 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             this.BottomMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrPictureBox3});
-            this.BottomMargin.HeightF = 100F;
             this.BottomMargin.Name = "BottomMargin";
             this.BottomMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrPictureBox3
             // 
-            this.xrPictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("xrPictureBox3.Image")));
+            this.xrPictureBox3.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox3.ImageSource"));
             this.xrPictureBox3.LocationFloat = new DevExpress.Utils.PointFloat(254F, 13F);
             this.xrPictureBox3.Name = "xrPictureBox3";
             this.xrPictureBox3.NavigateUrl = "http://www.devexpress.com/Products/NET/Reporting/";
@@ -521,7 +350,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             this.GroupHeader1,
             this.GroupFooter1});
             this.DetailReport.DataMember = "Orders.OrdersOrderDetails";
-            this.DetailReport.DataSource = this.sqlDataSource1;
+            this.DetailReport.DataSource = this.sqlDataSource2;
             this.DetailReport.Level = 0;
             this.DetailReport.Name = "DetailReport";
             this.DetailReport.PageBreak = DevExpress.XtraReports.UI.PageBreak.AfterBandExceptLastEntry;
@@ -559,10 +388,9 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrTableCell11
             // 
-            this.xrTableCell11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.OrdersOrderDetails.ProductName")});
+            this.xrTableCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumRecordNumber([ProductID])")});
             this.xrTableCell11.Name = "xrTableCell11";
-            xrSummary1.Func = DevExpress.XtraReports.UI.SummaryFunc.RecordNumber;
             xrSummary1.IgnoreNullValues = true;
             xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.xrTableCell11.Summary = xrSummary1;
@@ -570,45 +398,48 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrTableCell1
             // 
-            this.xrTableCell1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.OrdersOrderDetails.Quantity")});
+            this.xrTableCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Quantity]")});
             this.xrTableCell1.Name = "xrTableCell1";
             this.xrTableCell1.Text = "xrTableCell1";
             this.xrTableCell1.Weight = 0.51362107961775716D;
             // 
             // xrTableCell2
             // 
-            this.xrTableCell2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.OrdersOrderDetails.ProductName")});
+            this.xrTableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[OrderDetailsProducts].[Products_ProductName]")});
             this.xrTableCell2.Name = "xrTableCell2";
             this.xrTableCell2.Text = "xrTableCell2";
             this.xrTableCell2.Weight = 1.2717350033943944D;
             // 
             // xrTableCell3
             // 
-            this.xrTableCell3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.OrdersOrderDetails.UnitPrice", "{0:$0.00}")});
+            this.xrTableCell3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitPrice]")});
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.StylePriority.UseTextAlignment = false;
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell3.TextFormatString = "{0:$0.00}";
             this.xrTableCell3.Weight = 0.55150349731894355D;
             // 
             // xrTableCell4
             // 
-            this.xrTableCell4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.OrdersOrderDetails.Discount", "{0:$0.00}")});
+            this.xrTableCell4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Discount]")});
             this.xrTableCell4.Name = "xrTableCell4";
             this.xrTableCell4.StylePriority.UseTextAlignment = false;
             this.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell4.TextFormatString = "{0:$0.00}";
             this.xrTableCell4.Weight = 0.48767140202171211D;
             // 
             // xrTableCell5
             // 
-            this.xrTableCell5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.OrdersOrderDetails.NetPrice", "{0:$0.00}")});
+            this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[NetPrice]")});
             this.xrTableCell5.Name = "xrTableCell5";
             this.xrTableCell5.StylePriority.UseTextAlignment = false;
             this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrTableCell5.TextFormatString = "{0:$0.00}";
             this.xrTableCell5.Weight = 0.5329990636687334D;
             // 
             // GroupHeader1
@@ -694,22 +525,20 @@ namespace DevExpressWebFarmsWebGardenReporting {
             this.xrLabel12,
             this.xrLabel11,
             this.xrLabel10});
-            this.GroupFooter1.HeightF = 100F;
             this.GroupFooter1.Name = "GroupFooter1";
             // 
             // xrLabel16
             // 
-            this.xrLabel16.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.OrdersOrderDetails.ProductName")});
+            this.xrLabel16.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumCount([ProductID])")});
             this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 23.00002F);
             this.xrLabel16.Name = "xrLabel16";
             this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel16.SizeF = new System.Drawing.SizeF(163.5417F, 23F);
-            xrSummary2.FormatString = "Item count: {0}";
-            xrSummary2.Func = DevExpress.XtraReports.UI.SummaryFunc.Count;
             xrSummary2.IgnoreNullValues = true;
             xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.xrLabel16.Summary = xrSummary2;
+            this.xrLabel16.TextFormatString = "Item count: {0}";
             // 
             // xrLabel15
             // 
@@ -739,8 +568,8 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrLabel12
             // 
-            this.xrLabel12.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.OrdersOrderDetails.AmountPaid", "{0:$0.00}")});
+            this.xrLabel12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AmountPaid]")});
             this.xrLabel12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(564.5834F, 69.00005F);
             this.xrLabel12.Name = "xrLabel12";
@@ -749,28 +578,238 @@ namespace DevExpressWebFarmsWebGardenReporting {
             this.xrLabel12.StylePriority.UseFont = false;
             this.xrLabel12.StylePriority.UseTextAlignment = false;
             this.xrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrLabel12.TextFormatString = "{0:$0.00}";
             // 
             // xrLabel11
             // 
-            this.xrLabel11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.OrdersOrderDetails.DiscountTotal", "{0:$0.00}")});
+            this.xrLabel11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DiscountTotal]")});
             this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(564.5834F, 46.00003F);
             this.xrLabel11.Name = "xrLabel11";
             this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel11.SizeF = new System.Drawing.SizeF(77.08337F, 23F);
             this.xrLabel11.StylePriority.UseTextAlignment = false;
             this.xrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrLabel11.TextFormatString = "{0:$0.00}";
             // 
             // xrLabel10
             // 
-            this.xrLabel10.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.OrdersOrderDetails.SumUnitPrice", "{0:$0.00}")});
+            this.xrLabel10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SumUnitPrice]")});
             this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(564.5834F, 23.00002F);
             this.xrLabel10.Name = "xrLabel10";
             this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel10.SizeF = new System.Drawing.SizeF(77.08337F, 23F);
             this.xrLabel10.StylePriority.UseTextAlignment = false;
             this.xrLabel10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrLabel10.TextFormatString = "{0:$0.00}";
+            // 
+            // sqlDataSource2
+            // 
+            this.sqlDataSource2.ConnectionName = "NWind.mdf";
+            this.sqlDataSource2.Name = "sqlDataSource2";
+            columnExpression1.ColumnName = "CustomerID";
+            table1.Name = "Customers";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "CompanyName";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "ContactName";
+            columnExpression3.Table = table1;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "ContactTitle";
+            columnExpression4.Table = table1;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "Address";
+            columnExpression5.Table = table1;
+            column5.Expression = columnExpression5;
+            columnExpression6.ColumnName = "City";
+            columnExpression6.Table = table1;
+            column6.Expression = columnExpression6;
+            columnExpression7.ColumnName = "Region";
+            columnExpression7.Table = table1;
+            column7.Expression = columnExpression7;
+            columnExpression8.ColumnName = "PostalCode";
+            columnExpression8.Table = table1;
+            column8.Expression = columnExpression8;
+            columnExpression9.ColumnName = "Country";
+            columnExpression9.Table = table1;
+            column9.Expression = columnExpression9;
+            columnExpression10.ColumnName = "Phone";
+            columnExpression10.Table = table1;
+            column10.Expression = columnExpression10;
+            columnExpression11.ColumnName = "Fax";
+            columnExpression11.Table = table1;
+            column11.Expression = columnExpression11;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Columns.Add(column4);
+            selectQuery1.Columns.Add(column5);
+            selectQuery1.Columns.Add(column6);
+            selectQuery1.Columns.Add(column7);
+            selectQuery1.Columns.Add(column8);
+            selectQuery1.Columns.Add(column9);
+            selectQuery1.Columns.Add(column10);
+            selectQuery1.Columns.Add(column11);
+            selectQuery1.MetaSerializable = "<Meta X=\"20\" Y=\"20\" Width=\"108\" Height=\"261\" />";
+            selectQuery1.Name = "Customers";
+            selectQuery1.Tables.Add(table1);
+            columnExpression12.ColumnName = "OrderID";
+            table2.Name = "Order Details";
+            columnExpression12.Table = table2;
+            column12.Expression = columnExpression12;
+            columnExpression13.ColumnName = "ProductID";
+            columnExpression13.Table = table2;
+            column13.Expression = columnExpression13;
+            columnExpression14.ColumnName = "UnitPrice";
+            columnExpression14.Table = table2;
+            column14.Expression = columnExpression14;
+            columnExpression15.ColumnName = "Quantity";
+            columnExpression15.Table = table2;
+            column15.Expression = columnExpression15;
+            columnExpression16.ColumnName = "Discount";
+            columnExpression16.Table = table2;
+            column16.Expression = columnExpression16;
+            selectQuery2.Columns.Add(column12);
+            selectQuery2.Columns.Add(column13);
+            selectQuery2.Columns.Add(column14);
+            selectQuery2.Columns.Add(column15);
+            selectQuery2.Columns.Add(column16);
+            selectQuery2.MetaSerializable = "<Meta X=\"148\" Y=\"20\" Width=\"100\" Height=\"141\" />";
+            selectQuery2.Name = "OrderDetails";
+            selectQuery2.Tables.Add(table2);
+            columnExpression17.ColumnName = "OrderID";
+            table3.Name = "Orders";
+            columnExpression17.Table = table3;
+            column17.Expression = columnExpression17;
+            columnExpression18.ColumnName = "CustomerID";
+            columnExpression18.Table = table3;
+            column18.Expression = columnExpression18;
+            columnExpression19.ColumnName = "EmployeeID";
+            columnExpression19.Table = table3;
+            column19.Expression = columnExpression19;
+            columnExpression20.ColumnName = "OrderDate";
+            columnExpression20.Table = table3;
+            column20.Expression = columnExpression20;
+            columnExpression21.ColumnName = "RequiredDate";
+            columnExpression21.Table = table3;
+            column21.Expression = columnExpression21;
+            columnExpression22.ColumnName = "ShippedDate";
+            columnExpression22.Table = table3;
+            column22.Expression = columnExpression22;
+            columnExpression23.ColumnName = "ShipVia";
+            columnExpression23.Table = table3;
+            column23.Expression = columnExpression23;
+            columnExpression24.ColumnName = "Freight";
+            columnExpression24.Table = table3;
+            column24.Expression = columnExpression24;
+            columnExpression25.ColumnName = "ShipName";
+            columnExpression25.Table = table3;
+            column25.Expression = columnExpression25;
+            columnExpression26.ColumnName = "ShipAddress";
+            columnExpression26.Table = table3;
+            column26.Expression = columnExpression26;
+            columnExpression27.ColumnName = "ShipCity";
+            columnExpression27.Table = table3;
+            column27.Expression = columnExpression27;
+            columnExpression28.ColumnName = "ShipRegion";
+            columnExpression28.Table = table3;
+            column28.Expression = columnExpression28;
+            columnExpression29.ColumnName = "ShipPostalCode";
+            columnExpression29.Table = table3;
+            column29.Expression = columnExpression29;
+            columnExpression30.ColumnName = "ShipCountry";
+            columnExpression30.Table = table3;
+            column30.Expression = columnExpression30;
+            selectQuery3.Columns.Add(column17);
+            selectQuery3.Columns.Add(column18);
+            selectQuery3.Columns.Add(column19);
+            selectQuery3.Columns.Add(column20);
+            selectQuery3.Columns.Add(column21);
+            selectQuery3.Columns.Add(column22);
+            selectQuery3.Columns.Add(column23);
+            selectQuery3.Columns.Add(column24);
+            selectQuery3.Columns.Add(column25);
+            selectQuery3.Columns.Add(column26);
+            selectQuery3.Columns.Add(column27);
+            selectQuery3.Columns.Add(column28);
+            selectQuery3.Columns.Add(column29);
+            selectQuery3.Columns.Add(column30);
+            selectQuery3.MetaSerializable = "<Meta X=\"268\" Y=\"20\" Width=\"110\" Height=\"321\" />";
+            selectQuery3.Name = "Orders";
+            selectQuery3.Tables.Add(table3);
+            table4.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"283\" />";
+            table4.Name = "Products";
+            allColumns1.Table = table4;
+            columnExpression31.ColumnName = "ProductID";
+            columnExpression31.Table = table4;
+            column31.Expression = columnExpression31;
+            columnExpression32.ColumnName = "ProductName";
+            columnExpression32.Table = table4;
+            column32.Expression = columnExpression32;
+            columnExpression33.ColumnName = "SupplierID";
+            columnExpression33.Table = table4;
+            column33.Expression = columnExpression33;
+            columnExpression34.ColumnName = "CategoryID";
+            columnExpression34.Table = table4;
+            column34.Expression = columnExpression34;
+            columnExpression35.ColumnName = "QuantityPerUnit";
+            columnExpression35.Table = table4;
+            column35.Expression = columnExpression35;
+            columnExpression36.ColumnName = "UnitPrice";
+            columnExpression36.Table = table4;
+            column36.Expression = columnExpression36;
+            columnExpression37.ColumnName = "UnitsInStock";
+            columnExpression37.Table = table4;
+            column37.Expression = columnExpression37;
+            columnExpression38.ColumnName = "UnitsOnOrder";
+            columnExpression38.Table = table4;
+            column38.Expression = columnExpression38;
+            columnExpression39.ColumnName = "ReorderLevel";
+            columnExpression39.Table = table4;
+            column39.Expression = columnExpression39;
+            columnExpression40.ColumnName = "Discontinued";
+            columnExpression40.Table = table4;
+            column40.Expression = columnExpression40;
+            columnExpression41.ColumnName = "EAN13";
+            columnExpression41.Table = table4;
+            column41.Expression = columnExpression41;
+            selectQuery4.Columns.Add(allColumns1);
+            selectQuery4.Columns.Add(column31);
+            selectQuery4.Columns.Add(column32);
+            selectQuery4.Columns.Add(column33);
+            selectQuery4.Columns.Add(column34);
+            selectQuery4.Columns.Add(column35);
+            selectQuery4.Columns.Add(column36);
+            selectQuery4.Columns.Add(column37);
+            selectQuery4.Columns.Add(column38);
+            selectQuery4.Columns.Add(column39);
+            selectQuery4.Columns.Add(column40);
+            selectQuery4.Columns.Add(column41);
+            selectQuery4.MetaSerializable = "<Meta X=\"398\" Y=\"20\" Width=\"171\" Height=\"481\" />";
+            selectQuery4.Name = "Products";
+            selectQuery4.Tables.Add(table4);
+            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery1,
+            selectQuery2,
+            selectQuery3,
+            selectQuery4});
+            masterDetailInfo1.DetailQueryName = "OrderDetails";
+            relationColumnInfo1.NestedKeyColumn = "OrderID";
+            relationColumnInfo1.ParentKeyColumn = "OrderID";
+            masterDetailInfo1.KeyColumns.Add(relationColumnInfo1);
+            masterDetailInfo1.MasterQueryName = "Orders";
+            masterDetailInfo2.DetailQueryName = "Products";
+            relationColumnInfo2.NestedKeyColumn = "Products_ProductID";
+            relationColumnInfo2.ParentKeyColumn = "ProductID";
+            masterDetailInfo2.KeyColumns.Add(relationColumnInfo2);
+            masterDetailInfo2.MasterQueryName = "OrderDetails";
+            this.sqlDataSource2.Relations.AddRange(new DevExpress.DataAccess.Sql.MasterDetailInfo[] {
+            masterDetailInfo1,
+            masterDetailInfo2});
+            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // PageHeader
             // 
@@ -784,8 +823,8 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             this.barCode1.Alignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.barCode1.AutoModule = true;
-            this.barCode1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "Orders.OrderID")});
+            this.barCode1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[OrderID]")});
             this.barCode1.LocationFloat = new DevExpress.Utils.PointFloat(425.4166F, 10.00001F);
             this.barCode1.Name = "barCode1";
             this.barCode1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 13, 13, 100F);
@@ -821,18 +860,17 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // xrPageInfo1
             // 
             this.xrPageInfo1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.xrPageInfo1.Format = "{0:dddd, MMMM d, yyyy}";
             this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(6.874943F, 32.62501F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrPageInfo1.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
             this.xrPageInfo1.SizeF = new System.Drawing.SizeF(260.4166F, 23F);
             this.xrPageInfo1.StylePriority.UseFont = false;
+            this.xrPageInfo1.TextFormatString = "{0:dddd, MMMM d, yyyy}";
             // 
             // xrPageInfo2
             // 
             this.xrPageInfo2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.xrPageInfo2.Format = "Page {0} of {1}";
             this.xrPageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(373.7128F, 32.62501F);
             this.xrPageInfo2.Name = "xrPageInfo2";
             this.xrPageInfo2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -841,6 +879,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             this.xrPageInfo2.StylePriority.UseFont = false;
             this.xrPageInfo2.StylePriority.UseTextAlignment = false;
             this.xrPageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.xrPageInfo2.TextFormatString = "Page {0} of {1}";
             // 
             // EvenStyle
             // 
@@ -875,15 +914,14 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // paramCompany
             // 
             this.paramCompany.Description = "Company: ";
-            dynamicListLookUpSettings1.DataAdapter = null;
-            dynamicListLookUpSettings1.DataMember = "Customers";
-            dynamicListLookUpSettings1.DataSource = this.sqlDataSource1;
-            dynamicListLookUpSettings1.DisplayMember = "CompanyName";
-            dynamicListLookUpSettings1.ValueMember = "CustomerID";
-            this.paramCompany.LookUpSettings = dynamicListLookUpSettings1;
             this.paramCompany.MultiValue = true;
             this.paramCompany.Name = "paramCompany";
             this.paramCompany.ValueInfo = "ALFKI";
+            dynamicListLookUpSettings1.DataMember = "Customers";
+            dynamicListLookUpSettings1.DataSource = this.sqlDataSource2;
+            dynamicListLookUpSettings1.DisplayMember = "CompanyName";
+            dynamicListLookUpSettings1.ValueMember = "CustomerID";
+            this.paramCompany.ValueSourceSettings = dynamicListLookUpSettings1;
             // 
             // OddStyle
             // 
@@ -906,9 +944,10 @@ namespace DevExpressWebFarmsWebGardenReporting {
             this.DiscountTotal,
             this.AmountPaid});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
-            this.sqlDataSource1});
+            this.sqlDataSource2});
             this.DataMember = "Orders";
-            this.DataSource = this.sqlDataSource1;
+            this.DataSource = this.sqlDataSource2;
+            this.DisplayName = "Invoice";
             this.FilterString = "[CustomerID] In (?paramCompany)";
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
@@ -917,7 +956,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.EvenStyle,
             this.OddStyle});
-            this.Version = "17.1";
+            this.Version = "20.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -965,7 +1004,6 @@ namespace DevExpressWebFarmsWebGardenReporting {
         private DevExpress.XtraReports.UI.XRLabel xrLabel12;
         private DevExpress.XtraReports.UI.XRLabel xrLabel11;
         private DevExpress.XtraReports.UI.XRLabel xrLabel10;
-        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
         private DevExpress.XtraReports.UI.XRLabel xrLabel17;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox3;
@@ -979,6 +1017,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
         private DevExpress.XtraReports.UI.CalculatedField AmountPaid;
         private DevExpress.XtraReports.Parameters.Parameter paramCompany;
         private DevExpress.XtraReports.UI.XRBarCode barCode1;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
         private DevExpress.XtraReports.UI.XRControlStyle OddStyle;
     }
 }

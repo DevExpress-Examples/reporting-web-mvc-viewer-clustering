@@ -6,11 +6,11 @@ Imports System.Web.UI
 Imports System.Web.UI.WebControls
 
 Namespace DevExpressWebFarmsWebGardenReporting
-    Partial Public Class designer
-        Inherits System.Web.UI.Page
+	Partial Public Class designer
+		Inherits System.Web.UI.Page
 
-        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-            ASPxReportDesigner1.OpenReport("Invoice")
-        End Sub
-    End Class
+		Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+			ASPxReportDesigner1.OpenReport("Invoice")
+		End Sub
+	End Class
 End Namespace
