@@ -1,10 +1,11 @@
-﻿Imports System.Collections.Generic
+Imports System.Collections.Generic
 Imports System.IO
 Imports System.Linq
 Imports System.Web
 Imports DevExpress.XtraReports.UI
 
 Namespace DevExpressWebGardenReporting
+
     Public Class ReportStorageWebExtension1
         Inherits DevExpress.XtraReports.Web.Extensions.ReportStorageWebExtension
 
@@ -18,11 +19,8 @@ Namespace DevExpressWebGardenReporting
         End Function
 
         Public Overrides Function GetData(ByVal url As String) As Byte()
-            If url = "Invoice" Then
-                Return SerializeReport(New InvoiceReport())
-            End If
-
-            url &= If(url.EndsWith(".repx"), "", ".repx")
+            If Equals(url, "Invoice") Then Return SerializeReport(New InvoiceReport())
+            url += If(url.EndsWith(".repx"), "", ".repx")
             Using fileStream = File.OpenRead(HttpContext.Current.Server.MapPath("~\Reports\" & url))
                 Dim report = XtraReport.FromStream(fileStream, True)
                 Return SerializeReport(report)
@@ -33,14 +31,15 @@ Namespace DevExpressWebGardenReporting
             Dim dictionary = New Dictionary(Of String, String)()
             dictionary.Add("Invoice", "Invoice Report")
             Dim files = Directory.GetFiles(HttpContext.Current.Server.MapPath("~\Reports\"))
-            For Each item In files.Where(Function(x) x.Contains(".repx")).Select(Function(x) x.Split("\"c).Last())
+            For Each item In files.Where(Function(x) x.Contains(".repx")).[Select](Function(x) x.Split("\"c).Last())
                 dictionary.Add(item, item)
-            Next item
+            Next
+
             Return dictionary
         End Function
 
         Public Overrides Sub SetData(ByVal report As DevExpress.XtraReports.UI.XtraReport, ByVal url As String)
-            url &= If(url.EndsWith(".repx"), "", ".repx")
+            url += If(url.EndsWith(".repx"), "", ".repx")
             Using fileStream = File.OpenWrite(HttpContext.Current.Server.MapPath("~\Reports\" & url))
                 report.SaveLayoutToXml(fileStream)
             End Using
@@ -51,7 +50,7 @@ Namespace DevExpressWebGardenReporting
         End Function
 
         Private Function SerializeReport(ByVal report As XtraReport) As Byte()
-            Using stream As New MemoryStream()
+            Using stream As MemoryStream = New MemoryStream()
                 report.SaveLayoutToXml(stream)
                 stream.Position = 0
                 Return stream.GetBuffer()

@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.vb" Inherits="DevExpressWebGardenReporting.Global" Language="vb" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="DevExpressWebGardenReporting.Global" Language="C#" %>
