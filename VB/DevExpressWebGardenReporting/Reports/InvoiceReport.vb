@@ -5,7 +5,7 @@ Imports DevExpress.XtraReports.UI
 Namespace DevExpressWebGardenReporting
 
     Public Partial Class InvoiceReport
-        Inherits DevExpress.XtraReports.UI.XtraReport
+        Inherits XtraReport
 
         Public Sub New()
             InitializeComponent()
@@ -112,66 +112,66 @@ Namespace DevExpressWebGardenReporting
             Dim masterDetailInfo1 As DevExpress.DataAccess.Sql.MasterDetailInfo = New DevExpress.DataAccess.Sql.MasterDetailInfo()
             Dim relationColumnInfo2 As DevExpress.DataAccess.Sql.RelationColumnInfo = New DevExpress.DataAccess.Sql.RelationColumnInfo()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InvoiceReport))
-            Dim xrSummary1 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
-            Dim xrSummary2 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
+            Dim xrSummary1 As XRSummary = New XRSummary()
+            Dim xrSummary2 As XRSummary = New XRSummary()
             Dim code128Generator1 As DevExpress.XtraPrinting.BarCode.Code128Generator = New DevExpress.XtraPrinting.BarCode.Code128Generator()
             Dim dynamicListLookUpSettings1 As DevExpress.XtraReports.Parameters.DynamicListLookUpSettings = New DevExpress.XtraReports.Parameters.DynamicListLookUpSettings()
-            Me.Name = "Invoice"
-            Me.DisplayName = "Invoice"
+            Name = "Invoice"
+            DisplayName = "Invoice"
             sqlDataSource1 = New DevExpress.DataAccess.Sql.SqlDataSource(components)
-            Detail = New DevExpress.XtraReports.UI.DetailBand()
-            xrLabel9 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel8 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel5 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel4 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel3 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel2 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel1 = New DevExpress.XtraReports.UI.XRLabel()
-            TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
-            xrLabel20 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel19 = New DevExpress.XtraReports.UI.XRLabel()
-            BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
-            xrPictureBox3 = New DevExpress.XtraReports.UI.XRPictureBox()
-            DetailReport = New DevExpress.XtraReports.UI.DetailReportBand()
-            Detail1 = New DevExpress.XtraReports.UI.DetailBand()
-            xrTable1 = New DevExpress.XtraReports.UI.XRTable()
-            xrTableRow1 = New DevExpress.XtraReports.UI.XRTableRow()
-            xrTableCell11 = New DevExpress.XtraReports.UI.XRTableCell()
-            xrTableCell1 = New DevExpress.XtraReports.UI.XRTableCell()
-            xrTableCell2 = New DevExpress.XtraReports.UI.XRTableCell()
-            xrTableCell3 = New DevExpress.XtraReports.UI.XRTableCell()
-            xrTableCell4 = New DevExpress.XtraReports.UI.XRTableCell()
-            xrTableCell5 = New DevExpress.XtraReports.UI.XRTableCell()
-            GroupHeader1 = New DevExpress.XtraReports.UI.GroupHeaderBand()
-            xrTable2 = New DevExpress.XtraReports.UI.XRTable()
-            xrTableRow2 = New DevExpress.XtraReports.UI.XRTableRow()
-            xrTableCell12 = New DevExpress.XtraReports.UI.XRTableCell()
-            xrTableCell6 = New DevExpress.XtraReports.UI.XRTableCell()
-            xrTableCell7 = New DevExpress.XtraReports.UI.XRTableCell()
-            xrTableCell8 = New DevExpress.XtraReports.UI.XRTableCell()
-            xrTableCell9 = New DevExpress.XtraReports.UI.XRTableCell()
-            xrTableCell10 = New DevExpress.XtraReports.UI.XRTableCell()
-            GroupFooter1 = New DevExpress.XtraReports.UI.GroupFooterBand()
-            xrLabel16 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel15 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel14 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel13 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel12 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel11 = New DevExpress.XtraReports.UI.XRLabel()
-            xrLabel10 = New DevExpress.XtraReports.UI.XRLabel()
-            PageHeader = New DevExpress.XtraReports.UI.PageHeaderBand()
-            barCode1 = New DevExpress.XtraReports.UI.XRBarCode()
-            xrLabel17 = New DevExpress.XtraReports.UI.XRLabel()
-            PageFooter = New DevExpress.XtraReports.UI.PageFooterBand()
-            xrPageInfo1 = New DevExpress.XtraReports.UI.XRPageInfo()
-            xrPageInfo2 = New DevExpress.XtraReports.UI.XRPageInfo()
-            EvenStyle = New DevExpress.XtraReports.UI.XRControlStyle()
-            NetPrice = New DevExpress.XtraReports.UI.CalculatedField()
-            SumUnitPrice = New DevExpress.XtraReports.UI.CalculatedField()
-            DiscountTotal = New DevExpress.XtraReports.UI.CalculatedField()
-            AmountPaid = New DevExpress.XtraReports.UI.CalculatedField()
+            Detail = New DetailBand()
+            xrLabel9 = New XRLabel()
+            xrLabel8 = New XRLabel()
+            xrLabel5 = New XRLabel()
+            xrLabel4 = New XRLabel()
+            xrLabel3 = New XRLabel()
+            xrLabel2 = New XRLabel()
+            xrLabel1 = New XRLabel()
+            TopMargin = New TopMarginBand()
+            xrLabel20 = New XRLabel()
+            xrLabel19 = New XRLabel()
+            BottomMargin = New BottomMarginBand()
+            xrPictureBox3 = New XRPictureBox()
+            DetailReport = New DetailReportBand()
+            Detail1 = New DetailBand()
+            xrTable1 = New XRTable()
+            xrTableRow1 = New XRTableRow()
+            xrTableCell11 = New XRTableCell()
+            xrTableCell1 = New XRTableCell()
+            xrTableCell2 = New XRTableCell()
+            xrTableCell3 = New XRTableCell()
+            xrTableCell4 = New XRTableCell()
+            xrTableCell5 = New XRTableCell()
+            GroupHeader1 = New GroupHeaderBand()
+            xrTable2 = New XRTable()
+            xrTableRow2 = New XRTableRow()
+            xrTableCell12 = New XRTableCell()
+            xrTableCell6 = New XRTableCell()
+            xrTableCell7 = New XRTableCell()
+            xrTableCell8 = New XRTableCell()
+            xrTableCell9 = New XRTableCell()
+            xrTableCell10 = New XRTableCell()
+            GroupFooter1 = New GroupFooterBand()
+            xrLabel16 = New XRLabel()
+            xrLabel15 = New XRLabel()
+            xrLabel14 = New XRLabel()
+            xrLabel13 = New XRLabel()
+            xrLabel12 = New XRLabel()
+            xrLabel11 = New XRLabel()
+            xrLabel10 = New XRLabel()
+            PageHeader = New PageHeaderBand()
+            barCode1 = New XRBarCode()
+            xrLabel17 = New XRLabel()
+            PageFooter = New PageFooterBand()
+            xrPageInfo1 = New XRPageInfo()
+            xrPageInfo2 = New XRPageInfo()
+            EvenStyle = New XRControlStyle()
+            NetPrice = New CalculatedField()
+            SumUnitPrice = New CalculatedField()
+            DiscountTotal = New CalculatedField()
+            AmountPaid = New CalculatedField()
             paramCompany = New DevExpress.XtraReports.Parameters.Parameter()
-            OddStyle = New DevExpress.XtraReports.UI.XRControlStyle()
+            OddStyle = New XRControlStyle()
             CType(xrTable1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(xrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -258,7 +258,7 @@ Namespace DevExpressWebGardenReporting
             columnExpression22.ColumnName = "ShipCountry"
             columnExpression22.Table = table2
             column22.Expression = columnExpression22
-            column23.[Alias] = "Customers_CustomerID"
+            column23.Alias = "Customers_CustomerID"
             columnExpression23.ColumnName = "CustomerID"
             table3.Name = "Customers"
             columnExpression23.Table = table3
@@ -353,11 +353,11 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' Detail
             ' 
-            Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {xrLabel9, xrLabel8, xrLabel5, xrLabel4, xrLabel3, xrLabel2, xrLabel1})
+            Detail.Controls.AddRange(New XRControl() {xrLabel9, xrLabel8, xrLabel5, xrLabel4, xrLabel3, xrLabel2, xrLabel1})
             Detail.HeightF = 183.125F
             Detail.Name = "Detail"
             Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
-            Detail.SortFields.AddRange(New DevExpress.XtraReports.UI.GroupField() {New DevExpress.XtraReports.UI.GroupField("ContactName", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)})
+            Detail.SortFields.AddRange(New GroupField() {New GroupField("ContactName", XRColumnSortOrder.Ascending)})
             Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             ' 
             ' xrLabel9
@@ -386,7 +386,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' xrLabel5
             ' 
-            xrLabel5.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.ShipCountry")})
+            xrLabel5.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.ShipCountry")})
             xrLabel5.Font = New System.Drawing.Font("Segoe UI", 10F)
             xrLabel5.LocationFloat = New DevExpress.Utils.PointFloat(10.00001F, 102F)
             xrLabel5.Name = "xrLabel5"
@@ -397,7 +397,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' xrLabel4
             ' 
-            xrLabel4.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.ShipCity")})
+            xrLabel4.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.ShipCity")})
             xrLabel4.Font = New System.Drawing.Font("Segoe UI", 10F)
             xrLabel4.LocationFloat = New DevExpress.Utils.PointFloat(10.00001F, 79.00003F)
             xrLabel4.Name = "xrLabel4"
@@ -408,7 +408,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' xrLabel3
             ' 
-            xrLabel3.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.ShipAddress")})
+            xrLabel3.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.ShipAddress")})
             xrLabel3.Font = New System.Drawing.Font("Segoe UI", 10F)
             xrLabel3.LocationFloat = New DevExpress.Utils.PointFloat(10.00001F, 56.00001F)
             xrLabel3.Name = "xrLabel3"
@@ -419,7 +419,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' xrLabel2
             ' 
-            xrLabel2.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.ContactName")})
+            xrLabel2.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.ContactName")})
             xrLabel2.Font = New System.Drawing.Font("Segoe UI", 10F)
             xrLabel2.LocationFloat = New DevExpress.Utils.PointFloat(10.00001F, 32.99999F)
             xrLabel2.Name = "xrLabel2"
@@ -430,7 +430,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' xrLabel1
             ' 
-            xrLabel1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.CompanyName")})
+            xrLabel1.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.CompanyName")})
             xrLabel1.Font = New System.Drawing.Font("Segoe UI", 10F)
             xrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(10.00001F, 10.00001F)
             xrLabel1.Name = "xrLabel1"
@@ -441,7 +441,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' TopMargin
             ' 
-            TopMargin.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {xrLabel20, xrLabel19})
+            TopMargin.Controls.AddRange(New XRControl() {xrLabel20, xrLabel19})
             TopMargin.HeightF = 100F
             TopMargin.Name = "TopMargin"
             TopMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -480,7 +480,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' BottomMargin
             ' 
-            BottomMargin.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {xrPictureBox3})
+            BottomMargin.Controls.AddRange(New XRControl() {xrPictureBox3})
             BottomMargin.HeightF = 100F
             BottomMargin.Name = "BottomMargin"
             BottomMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -498,16 +498,16 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' DetailReport
             ' 
-            DetailReport.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Detail1, GroupHeader1, GroupFooter1})
+            DetailReport.Bands.AddRange(New Band() {Detail1, GroupHeader1, GroupFooter1})
             DetailReport.DataMember = "Orders.OrdersOrderDetails"
             DetailReport.DataSource = sqlDataSource1
             DetailReport.Level = 0
             DetailReport.Name = "DetailReport"
-            DetailReport.PageBreak = DevExpress.XtraReports.UI.PageBreak.AfterBandExceptLastEntry
+            DetailReport.PageBreak = PageBreak.AfterBandExceptLastEntry
             ' 
             ' Detail1
             ' 
-            Detail1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {xrTable1})
+            Detail1.Controls.AddRange(New XRControl() {xrTable1})
             Detail1.HeightF = 25F
             Detail1.Name = "Detail1"
             ' 
@@ -518,43 +518,43 @@ Namespace DevExpressWebGardenReporting
             xrTable1.Name = "xrTable1"
             xrTable1.OddStyleName = "OddStyle"
             xrTable1.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 5, 5, 100F)
-            xrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {xrTableRow1})
+            xrTable1.Rows.AddRange(New XRTableRow() {xrTableRow1})
             xrTable1.SizeF = New System.Drawing.SizeF(631.6667F, 25F)
             xrTable1.StylePriority.UsePadding = False
             ' 
             ' xrTableRow1
             ' 
-            xrTableRow1.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {xrTableCell11, xrTableCell1, xrTableCell2, xrTableCell3, xrTableCell4, xrTableCell5})
+            xrTableRow1.Cells.AddRange(New XRTableCell() {xrTableCell11, xrTableCell1, xrTableCell2, xrTableCell3, xrTableCell4, xrTableCell5})
             xrTableRow1.Name = "xrTableRow1"
             xrTableRow1.Weight = 11.5R
             ' 
             ' xrTableCell11
             ' 
-            xrTableCell11.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.ProductName")})
+            xrTableCell11.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.ProductName")})
             xrTableCell11.Name = "xrTableCell11"
-            xrSummary1.Func = DevExpress.XtraReports.UI.SummaryFunc.RecordNumber
+            xrSummary1.Func = SummaryFunc.RecordNumber
             xrSummary1.IgnoreNullValues = True
-            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
+            xrSummary1.Running = SummaryRunning.Group
             xrTableCell11.Summary = xrSummary1
             xrTableCell11.Weight = 0.34866643084143989R
             ' 
             ' xrTableCell1
             ' 
-            xrTableCell1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.Quantity")})
+            xrTableCell1.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.Quantity")})
             xrTableCell1.Name = "xrTableCell1"
             xrTableCell1.Text = "xrTableCell1"
             xrTableCell1.Weight = 0.51362107961775716R
             ' 
             ' xrTableCell2
             ' 
-            xrTableCell2.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.ProductName")})
+            xrTableCell2.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.ProductName")})
             xrTableCell2.Name = "xrTableCell2"
             xrTableCell2.Text = "xrTableCell2"
             xrTableCell2.Weight = 1.2717350033943944R
             ' 
             ' xrTableCell3
             ' 
-            xrTableCell3.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.UnitPrice", "{0:$0.00}")})
+            xrTableCell3.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.UnitPrice", "{0:$0.00}")})
             xrTableCell3.Name = "xrTableCell3"
             xrTableCell3.StylePriority.UseTextAlignment = False
             xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
@@ -562,7 +562,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' xrTableCell4
             ' 
-            xrTableCell4.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.Discount", "{0:$0.00}")})
+            xrTableCell4.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.Discount", "{0:$0.00}")})
             xrTableCell4.Name = "xrTableCell4"
             xrTableCell4.StylePriority.UseTextAlignment = False
             xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
@@ -570,7 +570,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' xrTableCell5
             ' 
-            xrTableCell5.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.NetPrice", "{0:$0.00}")})
+            xrTableCell5.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.NetPrice", "{0:$0.00}")})
             xrTableCell5.Name = "xrTableCell5"
             xrTableCell5.StylePriority.UseTextAlignment = False
             xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
@@ -578,7 +578,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' GroupHeader1
             ' 
-            GroupHeader1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {xrTable2})
+            GroupHeader1.Controls.AddRange(New XRControl() {xrTable2})
             GroupHeader1.HeightF = 25F
             GroupHeader1.Name = "GroupHeader1"
             ' 
@@ -588,14 +588,14 @@ Namespace DevExpressWebGardenReporting
             xrTable2.LocationFloat = New DevExpress.Utils.PointFloat(10.00001F, 0F)
             xrTable2.Name = "xrTable2"
             xrTable2.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 5, 5, 100F)
-            xrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {xrTableRow2})
+            xrTable2.Rows.AddRange(New XRTableRow() {xrTableRow2})
             xrTable2.SizeF = New System.Drawing.SizeF(631.6667F, 25F)
             xrTable2.StylePriority.UseFont = False
             xrTable2.StylePriority.UsePadding = False
             ' 
             ' xrTableRow2
             ' 
-            xrTableRow2.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {xrTableCell12, xrTableCell6, xrTableCell7, xrTableCell8, xrTableCell9, xrTableCell10})
+            xrTableRow2.Cells.AddRange(New XRTableCell() {xrTableCell12, xrTableCell6, xrTableCell7, xrTableCell8, xrTableCell9, xrTableCell10})
             xrTableRow2.Name = "xrTableRow2"
             xrTableRow2.Weight = 11.5R
             ' 
@@ -643,21 +643,21 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' GroupFooter1
             ' 
-            GroupFooter1.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {xrLabel16, xrLabel15, xrLabel14, xrLabel13, xrLabel12, xrLabel11, xrLabel10})
+            GroupFooter1.Controls.AddRange(New XRControl() {xrLabel16, xrLabel15, xrLabel14, xrLabel13, xrLabel12, xrLabel11, xrLabel10})
             GroupFooter1.HeightF = 100F
             GroupFooter1.Name = "GroupFooter1"
             ' 
             ' xrLabel16
             ' 
-            xrLabel16.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.ProductName")})
+            xrLabel16.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.ProductName")})
             xrLabel16.LocationFloat = New DevExpress.Utils.PointFloat(10.00001F, 23.00002F)
             xrLabel16.Name = "xrLabel16"
             xrLabel16.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
             xrLabel16.SizeF = New System.Drawing.SizeF(163.5417F, 23F)
             xrSummary2.FormatString = "Item count: {0}"
-            xrSummary2.Func = DevExpress.XtraReports.UI.SummaryFunc.Count
+            xrSummary2.Func = SummaryFunc.Count
             xrSummary2.IgnoreNullValues = True
-            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group
+            xrSummary2.Running = SummaryRunning.Group
             xrLabel16.Summary = xrSummary2
             ' 
             ' xrLabel15
@@ -688,7 +688,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' xrLabel12
             ' 
-            xrLabel12.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.AmountPaid", "{0:$0.00}")})
+            xrLabel12.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.AmountPaid", "{0:$0.00}")})
             xrLabel12.Font = New System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold)
             xrLabel12.LocationFloat = New DevExpress.Utils.PointFloat(564.5834F, 69.00005F)
             xrLabel12.Name = "xrLabel12"
@@ -700,7 +700,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' xrLabel11
             ' 
-            xrLabel11.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.DiscountTotal", "{0:$0.00}")})
+            xrLabel11.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.DiscountTotal", "{0:$0.00}")})
             xrLabel11.LocationFloat = New DevExpress.Utils.PointFloat(564.5834F, 46.00003F)
             xrLabel11.Name = "xrLabel11"
             xrLabel11.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -710,7 +710,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' xrLabel10
             ' 
-            xrLabel10.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.SumUnitPrice", "{0:$0.00}")})
+            xrLabel10.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.OrdersOrderDetails.SumUnitPrice", "{0:$0.00}")})
             xrLabel10.LocationFloat = New DevExpress.Utils.PointFloat(564.5834F, 23.00002F)
             xrLabel10.Name = "xrLabel10"
             xrLabel10.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -720,7 +720,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' PageHeader
             ' 
-            PageHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {barCode1, xrLabel17})
+            PageHeader.Controls.AddRange(New XRControl() {barCode1, xrLabel17})
             PageHeader.HeightF = 84.375F
             PageHeader.Name = "PageHeader"
             ' 
@@ -728,7 +728,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             barCode1.Alignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter
             barCode1.AutoModule = True
-            barCode1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Orders.OrderID")})
+            barCode1.DataBindings.AddRange(New XRBinding() {New XRBinding("Text", Nothing, "Orders.OrderID")})
             barCode1.LocationFloat = New DevExpress.Utils.PointFloat(425.4166F, 10.00001F)
             barCode1.Name = "barCode1"
             barCode1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 13, 13, 100F)
@@ -755,7 +755,7 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' PageFooter
             ' 
-            PageFooter.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {xrPageInfo1, xrPageInfo2})
+            PageFooter.Controls.AddRange(New XRControl() {xrPageInfo1, xrPageInfo2})
             PageFooter.HeightF = 67.08336F
             PageFooter.Name = "PageFooter"
             ' 
@@ -834,17 +834,17 @@ Namespace DevExpressWebGardenReporting
             ' 
             ' InvoiceReport
             ' 
-            Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Detail, TopMargin, BottomMargin, DetailReport, PageHeader, PageFooter})
-            Me.CalculatedFields.AddRange(New DevExpress.XtraReports.UI.CalculatedField() {NetPrice, SumUnitPrice, DiscountTotal, AmountPaid})
-            Me.ComponentStorage.AddRange(New System.ComponentModel.IComponent() {sqlDataSource1})
-            Me.DataMember = "Orders"
-            Me.DataSource = sqlDataSource1
-            Me.FilterString = "[CustomerID] In (?paramCompany)"
-            Me.Font = New System.Drawing.Font("Segoe UI", 9.75F)
-            Me.Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() {paramCompany})
-            Me.RequestParameters = False
-            Me.StyleSheet.AddRange(New DevExpress.XtraReports.UI.XRControlStyle() {EvenStyle, OddStyle})
-            Me.Version = "17.1"
+            Bands.AddRange(New Band() {Detail, TopMargin, BottomMargin, DetailReport, PageHeader, PageFooter})
+            CalculatedFields.AddRange(New CalculatedField() {NetPrice, SumUnitPrice, DiscountTotal, AmountPaid})
+            ComponentStorage.AddRange(New System.ComponentModel.IComponent() {sqlDataSource1})
+            DataMember = "Orders"
+            DataSource = sqlDataSource1
+            FilterString = "[CustomerID] In (?paramCompany)"
+            Font = New System.Drawing.Font("Segoe UI", 9.75F)
+            Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() {paramCompany})
+            RequestParameters = False
+            StyleSheet.AddRange(New XRControlStyle() {EvenStyle, OddStyle})
+            Version = "17.1"
             CType(xrTable1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(xrTable2, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
@@ -853,112 +853,112 @@ Namespace DevExpressWebGardenReporting
 #End Region
         Private components As System.ComponentModel.IContainer
 
-        Private Detail As DevExpress.XtraReports.UI.DetailBand
+        Private Detail As DetailBand
 
-        Private xrLabel9 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel9 As XRLabel
 
-        Private xrLabel8 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel8 As XRLabel
 
-        Private xrLabel5 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel5 As XRLabel
 
-        Private xrLabel4 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel4 As XRLabel
 
-        Private xrLabel3 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel3 As XRLabel
 
-        Private xrLabel2 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel2 As XRLabel
 
-        Private xrLabel1 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel1 As XRLabel
 
-        Private TopMargin As DevExpress.XtraReports.UI.TopMarginBand
+        Private TopMargin As TopMarginBand
 
-        Private xrLabel20 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel20 As XRLabel
 
-        Private xrLabel19 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel19 As XRLabel
 
-        Private BottomMargin As DevExpress.XtraReports.UI.BottomMarginBand
+        Private BottomMargin As BottomMarginBand
 
-        Private DetailReport As DevExpress.XtraReports.UI.DetailReportBand
+        Private DetailReport As DetailReportBand
 
-        Private Detail1 As DevExpress.XtraReports.UI.DetailBand
+        Private Detail1 As DetailBand
 
-        Private xrTable1 As DevExpress.XtraReports.UI.XRTable
+        Private xrTable1 As XRTable
 
-        Private xrTableRow1 As DevExpress.XtraReports.UI.XRTableRow
+        Private xrTableRow1 As XRTableRow
 
-        Private xrTableCell11 As DevExpress.XtraReports.UI.XRTableCell
+        Private xrTableCell11 As XRTableCell
 
-        Private xrTableCell1 As DevExpress.XtraReports.UI.XRTableCell
+        Private xrTableCell1 As XRTableCell
 
-        Private xrTableCell2 As DevExpress.XtraReports.UI.XRTableCell
+        Private xrTableCell2 As XRTableCell
 
-        Private xrTableCell3 As DevExpress.XtraReports.UI.XRTableCell
+        Private xrTableCell3 As XRTableCell
 
-        Private xrTableCell4 As DevExpress.XtraReports.UI.XRTableCell
+        Private xrTableCell4 As XRTableCell
 
-        Private xrTableCell5 As DevExpress.XtraReports.UI.XRTableCell
+        Private xrTableCell5 As XRTableCell
 
-        Private GroupHeader1 As DevExpress.XtraReports.UI.GroupHeaderBand
+        Private GroupHeader1 As GroupHeaderBand
 
-        Private xrTable2 As DevExpress.XtraReports.UI.XRTable
+        Private xrTable2 As XRTable
 
-        Private xrTableRow2 As DevExpress.XtraReports.UI.XRTableRow
+        Private xrTableRow2 As XRTableRow
 
-        Private xrTableCell12 As DevExpress.XtraReports.UI.XRTableCell
+        Private xrTableCell12 As XRTableCell
 
-        Private xrTableCell6 As DevExpress.XtraReports.UI.XRTableCell
+        Private xrTableCell6 As XRTableCell
 
-        Private xrTableCell7 As DevExpress.XtraReports.UI.XRTableCell
+        Private xrTableCell7 As XRTableCell
 
-        Private xrTableCell8 As DevExpress.XtraReports.UI.XRTableCell
+        Private xrTableCell8 As XRTableCell
 
-        Private xrTableCell9 As DevExpress.XtraReports.UI.XRTableCell
+        Private xrTableCell9 As XRTableCell
 
-        Private xrTableCell10 As DevExpress.XtraReports.UI.XRTableCell
+        Private xrTableCell10 As XRTableCell
 
-        Private GroupFooter1 As DevExpress.XtraReports.UI.GroupFooterBand
+        Private GroupFooter1 As GroupFooterBand
 
-        Private xrLabel16 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel16 As XRLabel
 
-        Private xrLabel15 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel15 As XRLabel
 
-        Private xrLabel14 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel14 As XRLabel
 
-        Private xrLabel13 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel13 As XRLabel
 
-        Private xrLabel12 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel12 As XRLabel
 
-        Private xrLabel11 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel11 As XRLabel
 
-        Private xrLabel10 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel10 As XRLabel
 
         Private sqlDataSource1 As DevExpress.DataAccess.Sql.SqlDataSource
 
-        Private PageHeader As DevExpress.XtraReports.UI.PageHeaderBand
+        Private PageHeader As PageHeaderBand
 
-        Private xrLabel17 As DevExpress.XtraReports.UI.XRLabel
+        Private xrLabel17 As XRLabel
 
-        Private xrPictureBox3 As DevExpress.XtraReports.UI.XRPictureBox
+        Private xrPictureBox3 As XRPictureBox
 
-        Private PageFooter As DevExpress.XtraReports.UI.PageFooterBand
+        Private PageFooter As PageFooterBand
 
-        Private xrPageInfo1 As DevExpress.XtraReports.UI.XRPageInfo
+        Private xrPageInfo1 As XRPageInfo
 
-        Private xrPageInfo2 As DevExpress.XtraReports.UI.XRPageInfo
+        Private xrPageInfo2 As XRPageInfo
 
-        Private EvenStyle As DevExpress.XtraReports.UI.XRControlStyle
+        Private EvenStyle As XRControlStyle
 
-        Private NetPrice As DevExpress.XtraReports.UI.CalculatedField
+        Private NetPrice As CalculatedField
 
-        Private SumUnitPrice As DevExpress.XtraReports.UI.CalculatedField
+        Private SumUnitPrice As CalculatedField
 
-        Private DiscountTotal As DevExpress.XtraReports.UI.CalculatedField
+        Private DiscountTotal As CalculatedField
 
-        Private AmountPaid As DevExpress.XtraReports.UI.CalculatedField
+        Private AmountPaid As CalculatedField
 
         Private paramCompany As DevExpress.XtraReports.Parameters.Parameter
 
-        Private barCode1 As DevExpress.XtraReports.UI.XRBarCode
+        Private barCode1 As XRBarCode
 
-        Private OddStyle As DevExpress.XtraReports.UI.XRControlStyle
+        Private OddStyle As XRControlStyle
     End Class
 End Namespace

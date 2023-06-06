@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="viewer.aspx.cs" Inherits="DevExpressWebGardenReporting.viewer" %>
+<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="viewer.aspx.vb" Inherits="DevExpressWebGardenReporting.viewer" %>
 
 <%@ Register Assembly="DevExpress.XtraReports.v17.1.Web, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraReports.Web" TagPrefix="dx" %>
 

@@ -14,7 +14,7 @@ Namespace DevExpressWebGardenReporting
         End Function
 
         Public Overrides Function SetNewData(ByVal report As XtraReport, ByVal defaultUrl As String) As String
-            Me.SetData(report, defaultUrl)
+            SetData(report, defaultUrl)
             Return defaultUrl
         End Function
 
@@ -38,7 +38,7 @@ Namespace DevExpressWebGardenReporting
             Return dictionary
         End Function
 
-        Public Overrides Sub SetData(ByVal report As DevExpress.XtraReports.UI.XtraReport, ByVal url As String)
+        Public Overrides Sub SetData(ByVal report As XtraReport, ByVal url As String)
             url += If(url.EndsWith(".repx"), "", ".repx")
             Using fileStream = File.OpenWrite(HttpContext.Current.Server.MapPath("~\Reports\" & url))
                 report.SaveLayoutToXml(fileStream)
