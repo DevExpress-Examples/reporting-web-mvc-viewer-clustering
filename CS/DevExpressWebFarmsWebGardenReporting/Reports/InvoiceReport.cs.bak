@@ -203,7 +203,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrLabel9
             // 
-            this.xrLabel9.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
+            this.xrLabel9.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(425.4167F, 32.99999F);
             this.xrLabel9.Name = "xrLabel9";
             this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -215,7 +215,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrLabel8
             // 
-            this.xrLabel8.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
+            this.xrLabel8.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(425.4166F, 10.00001F);
             this.xrLabel8.Name = "xrLabel8";
             this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -229,7 +229,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ShipCountry]")});
-            this.xrLabel5.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
+            this.xrLabel5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 102F);
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -241,7 +241,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ShipCity]")});
-            this.xrLabel4.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
+            this.xrLabel4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 79.00003F);
             this.xrLabel4.Name = "xrLabel4";
             this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -253,7 +253,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ShipAddress]")});
-            this.xrLabel3.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
+            this.xrLabel3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 56.00001F);
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -265,7 +265,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ContactName]")});
-            this.xrLabel2.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
+            this.xrLabel2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 32.99999F);
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -277,7 +277,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CompanyName]")});
-            this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
+            this.xrLabel1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 10.00001F);
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -296,7 +296,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrLabel20
             // 
-            this.xrLabel20.Font = new DevExpress.Drawing.DXFont("Segoe UI", 9.75F, DevExpress.Drawing.DXFontStyle.Underline);
+            this.xrLabel20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Underline);
             this.xrLabel20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(128)))));
             this.xrLabel20.LocationFloat = new DevExpress.Utils.PointFloat(9.99999F, 54.79167F);
             this.xrLabel20.Name = "xrLabel20";
@@ -311,7 +311,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrLabel19
             // 
-            this.xrLabel19.Font = new DevExpress.Drawing.DXFont("Segoe UI", 9.75F, DevExpress.Drawing.DXFontStyle.Underline);
+            this.xrLabel19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Underline);
             this.xrLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(128)))));
             this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(9.99999F, 21.45834F);
             this.xrLabel19.Name = "xrLabel19";
@@ -451,7 +451,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrTable2
             // 
-            this.xrTable2.Font = new DevExpress.Drawing.DXFont("Segoe UI", 9.75F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrTable2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 0F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 5, 5, 100F);
@@ -542,7 +542,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrLabel15
             // 
-            this.xrLabel15.Font = new DevExpress.Drawing.DXFont("Segoe UI", 9.75F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(464.5834F, 69.00005F);
             this.xrLabel15.Name = "xrLabel15";
             this.xrLabel15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -570,7 +570,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             this.xrLabel12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AmountPaid]")});
-            this.xrLabel12.Font = new DevExpress.Drawing.DXFont("Segoe UI", 9.75F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(564.5834F, 69.00005F);
             this.xrLabel12.Name = "xrLabel12";
             this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -836,7 +836,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrLabel17
             // 
-            this.xrLabel17.Font = new DevExpress.Drawing.DXFont("Segoe UI", 30F, DevExpress.Drawing.DXFontStyle.Regular, DevExpress.Drawing.DXGraphicsUnit.Point, new DevExpress.Drawing.DXFontAdditionalProperty[] {new DevExpress.Drawing.DXFontAdditionalProperty("GdiCharSet", ((byte)(0)))});
+            this.xrLabel17.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(108)))), ((int)(((byte)(9)))));
             this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(9.999943F, 10.00001F);
             this.xrLabel17.Name = "xrLabel17";
@@ -859,7 +859,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrPageInfo1
             // 
-            this.xrPageInfo1.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
+            this.xrPageInfo1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(6.874943F, 32.62501F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -870,7 +870,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             // 
             // xrPageInfo2
             // 
-            this.xrPageInfo2.Font = new DevExpress.Drawing.DXFont("Segoe UI", 10F);
+            this.xrPageInfo2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.xrPageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(373.7128F, 32.62501F);
             this.xrPageInfo2.Name = "xrPageInfo2";
             this.xrPageInfo2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -949,7 +949,7 @@ namespace DevExpressWebFarmsWebGardenReporting {
             this.DataSource = this.sqlDataSource2;
             this.DisplayName = "Invoice";
             this.FilterString = "[CustomerID] In (?paramCompany)";
-            this.Font = new DevExpress.Drawing.DXFont("Segoe UI", 9.75F);
+            this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.paramCompany});
             this.RequestParameters = false;
