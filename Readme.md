@@ -41,7 +41,7 @@ Refer to the following help topics for more information:
 * [Microsoft Azure Reporting](https://docs.devexpress.com/XtraReports/10769/)
 * [Web Farms and Web Garden Support](https://docs.devexpress.com/XtraReports/5199/)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-web-mvc-viewer-clustering&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-web-mvc-viewer-clustering&~~~was_helpful=no)
 
